@@ -1,6 +1,7 @@
 const images = [
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Color_icon_blue.svg/1200px-Color_icon_blue.svg.png', // Fixed closing quote
-    'https://upload.wikimedia.org/wikipedia/commons/3/37/Color_icon_red.png' // Fixed closing quote
+    'Random Images/blazegun.jpg', 
+    'Random Images/Boost_Mobile.jpg',
+	'Random Images/Supernamek.png' 
 ];
 
 function setRandomImage() {
