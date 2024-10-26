@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Imagerandomizer.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Example</title>
+    <style>
+        :root {
+            --bg-color: #d7f8e5;
+            --border-color: #7c9b89;
+            --subtitle-color: #35a363;
+            --link-color: #18bc5a;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide scrollbars */
+            position: relative;
+        }
+		
+		    body {
+            randomImage: var(--randomimage);
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Video background */
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire screen */
+            z-index: -1; /* Send video to back */
+        }
+
+        .content {
+            flex: 1; /* This allows content to take remaining space */
+			
+        }
+
+        header {
+            width: 400px;
+            height: 400px;
+            background-size: 103%;
+        }
+
+        .sidebar2 {
+            width: 250px;
+            background-image: url('https://files.catbox.moe/l55i53.png');
+            float: right;
+            height: auto;
+        }
+
+        article {
+            background-color: rgba(138, 43, 226, 0.8); /* Semi-transparent background */
+            border: 1px solid #6495ED;
+            margin-top: 20px;
+            max-width: 370px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .subtitle {
+            color: var(--subtitle-color);
+            font-size: 38px;
+            font-weight: bold;
+            border-bottom: 2px solid #00FFFF;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: right;
+            padding-top: 20px;
+        }
+		.subtitle2 {
+            color: var(--subtitle-color);
+            font-size: 15px;
+            font-weight: bold;
+            border-bottom: 2px solid #00FFFF;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: right;
+            padding-top: 20px;
+        }
+
+
+        .links {
+            list-style-type: '+';
+            font-size: 26px;
+        }
+
+        .links li a {
+            color: var(--link-color);
+            letter-spacing: 1px;
+            text-decoration: none;
+            line-height: 145px;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted>
+        <source src="questforpower3intro.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <header id="header" style="background-image: url('');"></header>
+        <main>
+            <article>
+                <div class="subtitle">Welcome to earth.</div>
+                <p>This text is going to scroll.</p>
+            </article>
+            <article>
+                <div class="subtitle2">Welcome to earth.</div>
+                <p>This has two lines </p>
+				<p>This is the send line retard</p>
+				<p>3rd line</p>
+            </article>
+            <article>
+                <div class="subtitle2">Our Partners</div>
+                <p>op op oppa gangnam</p>
+            </article>
+        </main>
+    </div>
+
+    <div class="sidebar2">
+        <ul class="links">
+            <li><a href="Contact.html">GF Applications</a></li>
+            <li><a href="Contact.html">Cinema</a></li>
+            <li><a href="Contact.html">Art</a></li>
+            <li><a href="Contact.html">Armory</a></li>
+            <li><a href="Contact.html">Frag</a></li>
+            <li><a href="Contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <script src="Imagerandomizer.js"></script>
+</body>
+</html>
